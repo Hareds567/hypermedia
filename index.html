@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Meta -->
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<!-- Links -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" />
+	<link rel="stylesheet" href="styles.css" />
+	<!-- Scripts -->
+	<script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+	<script defer src="script.js"></script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-laKom27vzAgz6WvG6044sWEbPqWQnPM&callback=initMap&libraries=&v=weekly"
+		async></script>
+	<!-- Title -->
+	<title>Marvel Cinematic Universe</title>
+</head>
+
+<body>
+	<header class="header" id='header'>
+		<ul class="menu">
+			<li><a href="###">Home Page</a></li>
+			<li><a href="###">Timeline</a></li>
+			<li><a href="###">About us</a></li>
+		</ul>
+	</header>
+	<div class="body" id="body">
+		<div class="bodyFirst" id="bodyFirst">
+			<p class="title">Marvel Cinematic </br> Universe</p>
+			<p class="description">
+				SUNY Oswego hypermedia design class’s members are building<br> a website to function as a key information source for the<br> users regarding marvel movies. The series features standalone movies<br> for the various superheroes and crossovers where the different characters<br> of the movies will be illustrated in the gallery of the website.
+				<br><br>This project will let viewers experience a virtual reality<br> where they can see the worldbuilding and the history of <br>the MCU through the lens of Google Maps. Whether it’s visiting a <br>specific location of one of the films or using smartphones to see the <br>site of specific events. Through the use of AR the Marvel Cinematic<br> Universe can crossover into the real world.
+			</p>
+		</div>
+		<div class='imageContainer' aos='fade'>
+			<div class='imageColumn'>
+				<img src="/Images/cover/first/1.jpg" style="width:100%">
+				<img src="/Images/cover/first/2.jpg" style="width:100%">
+				<img src="/Images/cover/first/3.jpg" style="width:100%">
+				<img src="/Images/cover/first/4.jpg" style="width:100%">
+				<img src="/Images/cover/first/5.jpg" style="width:100%">
+				<img src="/Images/cover/first/6.jpg" style="width:100%">
+			</div>
+			<div class='imageColumn'>
+				<img src="/Images/cover/second/1.jpg" style="width:100% ; margin-top:20px">
+				<img src="/Images/cover/second/2.jpg" style="width:100%">
+				<img src="/Images/cover/second/3.jpg" style="width:100%">
+				<img src="/Images/cover/second/4.jpg" style="width:100%">
+				<img src="/Images/cover/second/5.jpg" style="width:100%">
+				<img src="/Images/cover/second/6.jpg" style="width:100%">
+				<img src="/Images/cover/second/7.jpg" style="width:100%">
+			</div>
+			<div class='imageColumn'>
+				<img src="/Images/cover/third/1.jpg" style="width:100%">
+				<img src="/Images/cover/third/2.jpg" style="width:100%">
+				<img src="/Images/cover/third/3.jpg" style="width:100%">
+				<img src="/Images/cover/third/4.jpg" style="width:100%">
+				<img src="/Images/cover/third/5.jpg" style="width:100%">
+				<img src="/Images/cover/third/6.jpg" style="width:100%">
+				<img src="/Images/cover/third/7.jpg" style="width:100%">
+			</div>
+			<div class='imageColumn'>
+				<img src="/Images/cover/fourth/1.jpg" style="width:100% ; margin-top:20px">
+				<img src="/Images/cover/fourth/2.jpg" style="width:100%">
+				<img src="/Images/cover/fourth/3.jpg" style="width:100%">
+				<img src="/Images/cover/fourth/4.jpg" style="width:100%">
+				<img src="/Images/cover/fourth/5.jpg" style="width:100%">
+				<img src="/Images/cover/fourth/6.jpg" style="width:100%">
+			</div>
+		</div>
+		<!-- <div>
+			<div class="cube-wrap">
+				<div class="cube">
+					<div class="side top"></div>
+					<div class="side bottom"></div>
+					<div class="side front"></div>
+					<div class="side back"></div>
+				  <div class="side left"></div>
+				  <div class="side right"></div>
+				</div>
+			  </div>
+		</div> -->
+		<div class='bodySecond'>
+			<div class='mapDescription'>
+				<p class='exploreString'>Explore Iconic Scenes from Various Movies</p>
+			</div>
+			<div class='map1'>
+				<iframe title="temporary"
+					src="https://www.google.com/maps/embed?pb=!4v1616861531637!6m8!1m7!1sCAoSLEFGMVFpcE0zeUpNM3oyd0l3WmhHTHhjb3hrQzQxRm91elVsTnlXTzItb3pL!2m2!1d40.7484405!2d-73.98566439999999!3f0!4f0!5f0.7820865974627469"
+					width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+			</div>
+		</div>
+		
+		<div class='bodyThird'>
+			<div class="places" id="places"></div>
+			<div class='slideContainer'>
+				<div class='slidePrevDiv'>
+					<!-- <button class='slidePrev' onclick="manageSlides(-1)">&#10094;</button> -->
+				</div>
+				<div class='container_SlideShow'>
+					<div class='slide fade'>
+						<img class='image' src='/Images/blackPanther.jpg' style="width:100%" />
+					</div>
+					<div class='slide fade'>
+						<img class='image' src='/Images/captainVSiron.jpg' style="width:100%" />
+					</div>
+					<div class='slide fade'>
+						<img class='image' src='/Images/iAmIronMan.jpg' style="width:100%" />
+					</div>
+					<div class='slide fade'>
+						<img class='image' src='/Images/returnHeroesEngame.jpg' style="width:100%" />
+					</div>
+					<div class='slide fade'>
+						<img class='image' src='/Images/download.jpg' style="width:100%" />
+					</div>
+					<div class='slide fade'>
+						<img class='image' src='/Images/ironMan.jpg' style="width:100%" />
+					</div>
+					<div class='slide fade'>
+						<img class='image' src='/Images/thor.jpg' style="width:100%" />
+					</div>
+
+				</div>
+				<div class='slideNextDiv'>
+					<!-- <button class='slideNext' onclick="manageSlides(1)">&#10095;</button> -->
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<!-- <div class= 'mapTest'>
+		<div id="panorama"></div>
+	</div> -->
+
+</body>
+
+</html>
