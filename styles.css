@@ -1,0 +1,294 @@
+body {
+	background-color: #851e1e;
+	margin: 0;
+}
+hr {
+	border-top: 1px solid black;
+}
+#map,
+#panorama {
+	height: 100%;
+	width: 85%;
+	float: left;
+}
+.mapTest {
+	justify-content: center;
+	height: 100%;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 50px;
+	margin-left: 120px;
+}
+
+.header {
+	margin: 30;
+	color: purple;
+}
+.body {
+	display: flex;
+	flex-direction: column;
+}
+.bodyFirst {
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	margin-top: 300px;
+	margin-bottom: 300px;
+}
+.bodySecond {
+	display: grid;
+	grid-template-columns: 2fr 3fr;
+	margin: 100px;
+	align-items: center;
+	margin-top: 300px;
+	margin-bottom: 300px;
+}
+
+.bodyThird {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+.title {
+	font-family: "Dancing Script", cursive;
+	font-size: 72px;
+	text-align: center;
+	font-weight: bold;
+}
+.description {
+	color: white;
+	font-size: 24px;
+}
+.menu {
+	margin-top: 0;
+	padding-left: 30;
+	list-style-type: none;
+	overflow: hidden;
+}
+.menu a {
+	display: block;
+	text-align: center;
+	padding: 16px;
+	font-size: 20px;
+}
+.menu li {
+	font-family: Roboto;
+	list-style: none;
+	float: right;
+}
+
+.menu a:link {
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+.menu a:hover {
+	background-color: #111111;
+	text-decoration: none;
+}
+.exploreString {
+	color: white;
+	font-family: Roboto;
+}
+.mapDescription {
+	justify-self: end;
+}
+
+.map1 {
+	justify-self: center;
+	background-color: white;
+}
+.slideContainer {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	margin: auto;
+	width: fit-content;
+	padding: 30px;
+}
+
+.slide {
+	border-radius: 20px;
+	flex-grow: 3;
+	width: 1000%;
+}
+.image {
+	border-radius: 5%;
+	width: 100%;
+}
+.slideNext,
+.slidePrev {
+	border: none;
+	background-color: #851e1e;
+	cursor: pointer;
+}
+.container_SlideShow {
+	display: flex;
+	justify-content: space-between;
+	gap: 10%;
+}
+.fade {
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+.slidePrevDiv {
+	margin-right: 20px;
+
+	flex-shrink: 1;
+}
+
+.slideNextDiv {
+	margin-left: 20px;
+
+	flex-shrink: 1;
+}
+
+@-webkit-keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.4;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+/* =============================================== */
+
+body {
+	padding: 0;
+	margin: 0;
+	animation: body 1s linear;
+}
+@keyframes body {
+	to {
+		background-color: rgb(19, 48, 97);
+	}
+}
+
+.progress {
+	height: 3px;
+	width: 0%;
+	background-color: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	animation: progress 1s linear;
+}
+@keyframes progress {
+	to {
+		background-color: rgb(20, 255, 226);
+		width: 100%;
+	}
+}
+.cube-wrap {
+	--size: 30vmin;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 0;
+	height: 0;
+	perspective: 100vmin;
+}
+.cube {
+	transform-style: preserve-3d;
+	transform: rotateX(0deg) rotateZ(45deg) rotateY(-45deg);
+	animation: cube 1s linear;
+}
+@keyframes cube {
+	to {
+		transform: rotateX(360deg) rotateZ(45deg) rotateY(-45deg);
+	}
+}
+
+.side {
+	position: absolute;
+	width: var(--size);
+	height: var(--size);
+	background-color: #eee;
+	backface-visibility: visible;
+	top: calc(var(--size) * -0.5);
+	left: calc(var(--size) * -0.5);
+}
+.top {
+	background-color: #fff;
+	transform: rotateX(90deg) translateZ(calc(var(--size) * 0.5));
+}
+.bottom {
+	background-color: #999;
+	transform: rotateX(90deg) translateZ(calc(var(--size) * -0.5));
+}
+.left {
+	background-color: #ccc;
+	transform: rotateY(90deg) translateZ(calc(var(--size) * 0.5));
+}
+.right {
+	background-color: #ddd;
+	transform: rotateY(90deg) translateZ(calc(var(--size) * -0.5));
+}
+.front {
+	background-color: #aaa;
+	transform: translateZ(calc(var(--size) * 0.5));
+}
+.back {
+	background-color: #bbb;
+	transform: translateZ(calc(var(--size) * -0.5));
+}
+
+:root * {
+	/* Pause the animation */
+	animation-play-state: paused;
+	/* Bind the animation to scroll */
+	animation-delay: calc(var(--scroll) * -1s);
+	/* These last 2 properites clean up overshoot weirdness */
+	animation-iteration-count: 1;
+	animation-fill-mode: both;
+}
+
+/* =============================================== */
+
+.imageContainer {
+	margin-top: 300px;
+	margin-bottom: 200px;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	padding: 0 4px;
+	animation: fadein;
+}
+.imageColumn {
+	-ms-flex: 25%;
+	flex: 25%;
+	max-width: 24.4%;
+	padding: 0 4px;
+	transition: 0.3s;
+}
+.imageColumn:hover {
+	transform: translateZ(250px);
+}
+
+@keyframes slide {
+	from {
+		transfrom: translateZ(250px);
+	}
+	to {
+		transfrom: translateZ(0);
+	}
+}
